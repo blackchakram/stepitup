@@ -211,7 +211,7 @@ video {
   margin-bottom: 100px;
 }
 
-.classblock .classbtn {
+.classblock .classbtn, .classblock .dealbtn {
   float: right;
   position: relative;
   right: 20px;
@@ -318,4 +318,8 @@ video {
 .classtime p {
   margin-top: 0;
   margin-bottom: 0.3em;
+}
+
+.classblock .dealbtn {
+  top: 8px;
 }
