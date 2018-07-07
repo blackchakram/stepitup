@@ -21,6 +21,14 @@ section p {
   font-size: 16px;
 }
 
+h3 {
+  margin-bottom: 0.3em;
+  margin-top: 30px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .secwhite h1, .secwhite h2, .secwhite p{ color: white; }
 
 .secblack h1, .secblack h2, .secblack p{ color: black; }
@@ -33,6 +41,10 @@ section.whoweare, section.testimonials, footer {
   background-color: #C44141;
   padding: 60px 20px;
   box-sizing: border-box;
+}
+
+.topmargin70 {
+  margin-top: 70px;
 }
 
 /* =============== HEADER STUFF =============== */
@@ -173,4 +185,137 @@ video {
   width: 70vw;
   height: calc(70vw * 0.8);
   margin: 0 calc(15vw - 20px);
+}
+
+.classcost {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 26px 0 26px 125px;
+  border-color: transparent transparent transparent #f45353;
+}
+
+.classcost p {
+  position: absolute;
+  margin: 0;
+  left: -110px;
+  top: -9px;
+  color: white;
+  font-weight: 500;
+}
+
+.classblock {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.classblock .classbtn {
+  float: right;
+  position: relative;
+  right: 20px;
+  margin: 0;
+  top: -45px;
+}
+
+.lightribbons {
+  position: absolute;
+  z-index: -20;
+}
+
+.lightribbons img {
+  width: 200%;
+  margin-top: -11%;
+  margin-left: -45%;
+}
+
+
+.pricingblock {
+  position: relative;
+  margin: 20px 20px 40px;
+  position: relative;
+}
+
+.pricingbg {
+  position: absolute;
+  z-index: -1;
+  width: 15
+}
+
+.pricingcost {
+  position: relative;
+  top: 18px;
+  width: 127px;
+  text-align: center;
+  display: inline-block;
+}
+
+.pricingcost div{
+  color: white;
+  font-family: "Roboto";
+  display: inline;
+}
+
+.pricedollars {
+  font-size: 18px;
+  top: -15px;
+  left: -5px;
+  position: relative;
+  font-weight: 300;
+}
+
+.pricemonth {
+  position: relative;
+  font-size: 18px;
+  left: 5px;
+  top: 5px;
+  font-weight: 300;
+}
+
+.priceamount {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.pricingtext {
+  position: relative;
+  display: inline-flex;
+  right: 0;
+  width: 166px;
+  height: 54px;
+  padding-left: 20px;
+}
+
+.silhouette {
+  margin: 10px -1px -1px 0;
+  height: 100px
+}
+
+.pricingunderline {
+  background-color: black;
+  height: 2px;
+  width: 100%;
+  margin-top: -5px;
+}
+
+
+
+.classimage {
+  width: 100%;
+  height: 118px;   /* delete later */
+}
+
+.classdescription {
+  padding: 0 20px;
+}
+
+.classtime {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.classtime p {
+  margin-top: 0;
+  margin-bottom: 0.3em;
 }
