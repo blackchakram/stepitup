@@ -8,8 +8,9 @@
 
      <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,500,600" rel="stylesheet">
 
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
      <link rel="stylesheet" type="text/css" href="css/normalize.css">
      <link rel="stylesheet" type="text/css" href="css/homepage.css">
    </head>
@@ -23,6 +24,9 @@
          <img class="logo" src="images/SIUPAlogo.svg"/>
        </div>
        <nav class="topnav">
+         <div class="login">
+           <a href="#" class="navlink">LOG IN</a>
+         </div>
          <div class="hamburger">
            <p>MENU</p>
            <img src="images/hamburgersmall.svg" />
@@ -41,9 +45,6 @@
              <a href="#" class="navlink">CONTACT US</a>
            </div>
            <div class="linkblock">
-             <a href="#" class="navlink">PARENT PORTAL</a>
-           </div>
-           <div class="linkblock">
              <a href="#" class="navlink">EVENTS</a>
            </div>
            <div class="linkblock">
@@ -54,12 +55,14 @@
            </div>
          </div>
        </nav>
+       <video autoplay loop muted id="TitleVid">
+         <source src="video/titlevid.mp4" type="video/mp4">
+       </video>
      </header>
 
 <!-- ======================================= HERO ======================================= -->
 
      <div class="hero">
-        <video></video>
         <div class="ctaholder">
           <div class="button">
             <a>FREE TRIAL SESSION</a>
@@ -134,102 +137,61 @@
 
     <h1 class="sectiontitle">Pricing</h1>
 
+    <div class="widthmanager">
       <div class="pricingblock">
-        <img class="pricingbg" src="images/pricingbg.svg" />
-        <div class="pricingcost"><div class="pricedollars">$</div><div class="priceamount"">50</div><div class="pricemonth">&#47; mo</div></div>
-        <p class="pricingtext">When enrolled in one class per week</p>
-        <img class="silhouette" src="images/classes1.svg" />
-        <div class="pricingunderline"></div>
+        <img class="pricingbg bg1" src="images/pricingbg_narrow.svg" />
+        <div class="pricingcost"><div class="pricedollars">$</div><div class="priceamount">55</div><div class="pricemonth">&#47; mo</div></div>
+        <div class="classesnum"><div class="classesnumeral">1</div><div class="classesamount">class &#47; week</div></div>
+        <img class="silhouette s1" src="images/classes1.svg" />
       </div>
 
       <div class="pricingblock">
-        <img class="pricingbg" src="images/pricingbg.svg" />
-        <div class="pricingcost"><div class="pricedollars">$</div><div class="priceamount"">80</div><div class="pricemonth">&#47; mo</div></div>
-        <p class="pricingtext">When enrolled in two classes per week</p>
-        <img class="silhouette" src="images/classes1.svg" />
-        <img class="silhouette" src="images/classes2.svg" />
-        <div class="pricingunderline"></div>
+        <img class="pricingbg bg2" src="images/pricingbg_narrow.svg" />
+        <div class="pricingcost"><div class="pricedollars">$</div><div class="priceamount">80</div><div class="pricemonth">&#47; mo</div></div>
+        <div class="classesnum"><div class="classesnumeral">2</div><div class="classesamount">classes &#47; week</div></div>
+        <img class="silhouette s2" src="images/classes2.svg" />
       </div>
 
       <div class="pricingblock">
-        <img class="pricingbg" src="images/pricingbg.svg" />
-        <div class="pricingcost"><div class="pricedollars">$</div><div class="priceamount"">110</div><div class="pricemonth">&#47; mo</div></div>
-        <p class="pricingtext">When enrolled in three classes per week</p>
-        <img class="silhouette" src="images/classes1.svg" />
-        <img class="silhouette" src="images/classes2.svg" />
-        <img class="silhouette" src="images/classes3.svg" />
-        <div class="pricingunderline"></div>
+        <img class="pricingbg bg3" src="images/pricingbg_narrow.svg" />
+        <div class="pricingcost"><div class="pricedollars">$</div><div class="priceamount">110</div><div class="pricemonth">&#47; mo</div></div>
+        <div class="classesnum"><div class="classesnumeral">3</div><div class="classesamount">classes &#47; week</div></div>
+        <img class="silhouette s3" src="images/classes3.svg" />
       </div>
 
       <div class="pricingblock">
-        <img class="pricingbg" src="images/pricingbg.svg" />
-        <div class="pricingcost"><div class="pricedollars">$</div><div class="priceamount"">140</div><div class="pricemonth">&#47; mo</div></div>
-        <p class="pricingtext">When enrolled in four classes per week</p>
-        <img class="silhouette" src="images/classes1.svg" />
-        <img class="silhouette" src="images/classes2.svg" />
-        <img class="silhouette" src="images/classes3.svg" />
-        <img class="silhouette" src="images/classes4.svg" />
-        <div class="pricingunderline"></div>
+        <img class="pricingbg bg4" src="images/pricingbg_narrow.svg" />
+        <div class="pricingcost"><div class="pricedollars">$</div><div class="priceamount">140</div><div class="pricemonth">&#47; mo</div></div>
+        <div class="classesnum"><div class="classesnumeral">4</div><div class="classesamount">classes &#47; week</div></div>
+        <img class="silhouette s4" src="images/classes4.svg" />
       </div>
 
       <div class="pricingblock">
-        <img class="pricingbg" src="images/pricingbg.svg" />
-        <div class="pricingcost"><div class="pricedollars">$</div><div class="priceamount"">160</div><div class="pricemonth">&#47; mo</div></div>
-        <p class="pricingtext">When enrolled in five classes per week</p>
-        <img class="silhouette" src="images/classes1.svg" />
-        <img class="silhouette" src="images/classes2.svg" />
-        <img class="silhouette" src="images/classes3.svg" />
-        <img class="silhouette" src="images/classes4.svg" />
-        <img class="silhouette" src="images/classes5.svg" />
-        <div class="pricingunderline"></div>
+        <img class="pricingbg bg5" src="images/pricingbg_narrow.svg" />
+        <div class="pricingcost"><div class="pricedollars">$</div><div class="priceamount">160</div><div class="pricemonth">&#47; mo</div></div>
+        <div class="classesnum"><div class="classesnumeral">5</div><div class="classesamount">classes &#47; week</div></div>
+        <img class="silhouette s5" src="images/classes5.svg" />
       </div>
 
       <div class="pricingblock">
-        <img class="pricingbg" src="images/pricingbg.svg" />
-        <div class="pricingcost"><div class="pricedollars">$</div><div class="priceamount"">175</div><div class="pricemonth">&#47; mo</div></div>
-        <p class="pricingtext">When enrolled in six or more classes per week</p>
-        <img class="silhouette" src="images/classes1.svg" />
-        <img class="silhouette" src="images/classes2.svg" />
-        <img class="silhouette" src="images/classes3.svg" />
-        <img class="silhouette" src="images/classes4.svg" />
-        <img class="silhouette" src="images/classes5.svg" />
-        <img class="silhouette" src="images/classes6.svg" />
-        <div class="pricingunderline"></div>
+        <img class="pricingbg bg6" src="images/pricingbg_narrow.svg" />
+        <div class="pricingcost"><div class="pricedollars">$</div><div class="priceamount">175</div><div class="pricemonth">&#47; mo</div></div>
+        <div class="classesnum"><div class="classesnumeral">6</div><div class="classesamount">classes &#47; week</div></div>
+        <img class="silhouette s6" src="images/classes6.svg" />
       </div>
+
+    <div class="discountblock">
+      <img class="pricingbg" src="images/pricingbg_narrow.svg" />
+      <img class="famsilhouette" src="images/family.svg" />
+      <div class="discountcost"><div class="pricesave">save</div><div class="pricepct">15%</div></div>
+      <p class="discounttext">by enrolling two or more family members!</p>
+    </div>
+  </div>
 
     <h1 class="sectiontitle topmargin70">Classes</h1>
 
-    <div class="classblock">
-      <div class="lightribbons">
-        <img src="images/ribbonlt1.svg"></img>
-      </div>
-         <h2 class="subtitle">HIP-HOP</h2>
-         <img class="classimage" src="images/mock_class.png"/>
-         <div class="classdescription">
-           <p>
-             description
-           </p>
-         </div>
-         <div class="classtime">
-           <h3>Tricking Level 1</h3>
-           <p>Mondays 5:00 - 6:00 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Beginners Level</h3>
-           <p>Mondays 6:00 - 7:00 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Level 1</h3>
-           <p>Fridays 6:30 - 7:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <p>-OR-</p>
-           <p>Saturdays 1:00 - 2:00 PM</p>
-           <h3>Level 2</h3>
-           <p>Wednesdays 6:30 - 7:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Teen to Adult</h3>
-           <p>Wednesdays 7:30 - 8:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-         </div>
-    </div>
+
+
 
     <div class="classblock">
       <div class="lightribbons">
@@ -237,39 +199,21 @@
       </div>
          <h2 class="subtitle">ACTING</h2>
          <img class="classimage" src="images/mock_class.png"/>
-         <div class="classdescription">
-           <p>
-             description
-           </p>
-         </div>
-         <div class="classtime">
-           <h3>For Stage and Film</h3>
-           <p>Mondays 7:00 - 8:00 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Musical Theater</h3>
-           <p>Wednesdays 5:30 - 6:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-         </div>
-    </div>
-
-    <div class="classblock">
-      <div class="lightribbons">
-        <img src="images/ribbonlt1.svg"></img>
-      </div>
-         <h2 class="subtitle">VOCALS</h2>
-         <img class="classimage" src="images/mock_class.png"/>
-         <div class="classdescription">
-           <p>
-             description
-           </p>
-         </div>
-         <div class="classtime">
-           <h3>Vocal Ensemble</h3>
-           <p>Mondays 6:00 - 7:00 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Musical Theater</h3>
-           <p>Wednesdays 5:30 - 6:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
+         <div class="expander"><div class="exptext">EXPAND</div><i class="far fa-caret-square-right"></i></div>
+         <div class="expansionarea">
+           <div class="classdescription">
+             <p>
+               description
+             </p>
+           </div>
+           <div class="classtime">
+             <h3>For Stage and Film</h3>
+             <p>Mondays 7:00 - 8:00 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Musical Theater</h3>
+             <p>Wednesdays 5:30 - 6:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+           </div>
          </div>
     </div>
 
@@ -279,101 +223,36 @@
       </div>
          <h2 class="subtitle">BALLET</h2>
          <img class="classimage" src="images/mock_class.png"/>
-         <div class="classdescription">
-           <p>
-             description
-           </p>
-         </div>
-         <div class="classtime">
-           <h3>Prepoint Conditioning</h3>
-           <p>Thursdays 6:30 - 7:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Prepoint &#47; Point Conditioning</h3>
-           <p>Fridays 4:30 - 5:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Point</h3>
-           <p>Saturdays 11:00 - 12:00 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Level 1</h3>
-           <p>Thursdays 5:30 - 6:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Ballet 2 (ages 10+)</h3>
-           <p>Tuesdays 5:30 - 6:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Ballet II-III</h3>
-           <p>Thursdays 7:30 - 8:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Ballet &#47; Tap Combo</h3>
-           <p>Saturdays 10:00 - 11:00 AM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-         </div>
-    </div>
-
-    <div class="classblock">
-      <div class="lightribbons">
-        <img src="images/ribbonlt1.svg"></img>
-      </div>
-         <h2 class="subtitle">TAP</h2>
-         <img class="classimage" src="images/mock_class.png"/>
-         <div class="classdescription">
-           <p>
-             description
-           </p>
-         </div>
-         <div class="classtime">
-           <h3>Level 1</h3>
-           <p>Fridays 5:30 - 6:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Level 2</h3>
-           <p>Thursdays 7:30 - 8:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Ballet &#47; Tap Combo</h3>
-           <p>Saturdays 10:00 - 11:00 AM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-         </div>
-    </div>
-
-    <div class="classblock">
-      <div class="lightribbons">
-        <img src="images/ribbonlt2.svg"></img>
-      </div>
-         <h2 class="subtitle">PIANO ENSEMBLE</h2>
-         <img class="classimage" src="images/mock_class.png"/>
-         <div class="classdescription">
-           <p>
-             description
-           </p>
-         </div>
-         <div class="classtime">
-           <h3>Beginners Level</h3>
-           <p>Tuesdays 5:30 - 6:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Intermediate Level</h3>
-           <p>Tuesdays 6:30 - 7:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-         </div>
-    </div>
-
-    <div class="classblock">
-      <div class="lightribbons">
-        <img src="images/ribbonlt1.svg"></img>
-      </div>
-         <h2 class="subtitle">JAZZ</h2>
-         <img class="classimage" src="images/mock_class.png"/>
-         <div class="classdescription">
-           <p>
-             description
-           </p>
-         </div>
-         <div class="classtime">
-           <h3>Level 1</h3>
-           <p>Wednesdays 6:30 - 7:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <p>-OR-</p>
-           <p>Saturdays 12:00 - 1:00 PM</p>
-           <h3>Level 2</h3>
-           <p>Thursdays 6:30 - 7:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
+         <div class="expander"><div class="exptext">EXPAND</div><i class="far fa-caret-square-right"></i></div>
+         <div class="expansionarea">
+           <div class="classdescription">
+             <p>
+               description
+             </p>
+           </div>
+           <div class="classtime">
+             <h3>Prepoint Conditioning</h3>
+             <p>Thursdays 6:30 - 7:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Prepoint &#47; Point Cond.</h3>
+             <p>Fridays 4:30 - 5:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Point</h3>
+             <p>Saturdays 11:00 - 12:00 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Level 1</h3>
+             <p>Thursdays 5:30 - 6:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Ballet 2 (ages 10+)</h3>
+             <p>Tuesdays 5:30 - 6:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Ballet II-III</h3>
+             <p>Thursdays 7:30 - 8:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Ballet &#47; Tap Combo</h3>
+             <p>Saturdays 10:00 - 11:00 AM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+           </div>
          </div>
     </div>
 
@@ -383,20 +262,159 @@
       </div>
          <h2 class="subtitle">GYMNASTICS</h2>
          <img class="classimage" src="images/mock_class.png"/>
-         <div class="classdescription">
-           <p>
-             description
-           </p>
+         <div class="expander"><div class="exptext">EXPAND</div><i class="far fa-caret-square-right"></i></div>
+         <div class="expansionarea">
+           <div class="classdescription">
+             <p>
+               description
+             </p>
+           </div>
+           <div class="classtime">
+             <h3>Level 1</h3>
+             <p>Fridays 5:30 - 6:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <p>-OR-</p>
+             <p>Saturdays 11:00 - 12:00 PM</p>
+             <h3>Acrobatics Level 2</h3>
+             <p>Fridays 6:30 - 7:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+           </div>
          </div>
-         <div class="classtime">
-           <h3>Level 1</h3>
-           <p>Fridays 5:30 - 6:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <p>-OR-</p>
-           <p>Saturdays 11:00 - 12:00 PM</p>
-           <h3>Acrobatics Level 2</h3>
-           <p>Fridays 6:30 - 7:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
+    </div>
+
+    <div class="classblock">
+      <div class="lightribbons">
+        <img src="images/ribbonlt1.svg"></img>
+      </div>
+         <h2 class="subtitle">HIP-HOP</h2>
+         <img class="classimage" src="images/mock_class.png"/>
+         <div class="expander"><div class="exptext">EXPAND</div><i class="far fa-caret-square-right"></i></div>
+         <div class="expansionarea">
+           <div class="classdescription">
+             <p>
+               description
+             </p>
+           </div>
+           <div class="classtime">
+             <h3>Tricking Level 1</h3>
+             <p>Mondays 5:00 - 6:00 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Beginners Level</h3>
+             <p>Mondays 6:00 - 7:00 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Level 1</h3>
+             <p>Fridays 6:30 - 7:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <p>-OR-</p>
+             <p>Saturdays 1:00 - 2:00 PM</p>
+             <h3>Level 2</h3>
+             <p>Wednesdays 6:30 - 7:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Teen to Adult</h3>
+             <p>Wednesdays 7:30 - 8:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+           </div>
+         </div>
+    </div>
+
+    <div class="classblock">
+      <div class="lightribbons">
+        <img src="images/ribbonlt1.svg"></img>
+      </div>
+         <h2 class="subtitle">JAZZ</h2>
+         <img class="classimage" src="images/mock_class.png"/>
+         <div class="expander"><div class="exptext">EXPAND</div><i class="far fa-caret-square-right"></i></div>
+         <div class="expansionarea">
+           <div class="classdescription">
+             <p>
+               description
+             </p>
+           </div>
+           <div class="classtime">
+             <h3>Level 1</h3>
+             <p>Wednesdays 6:30 - 7:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <p>-OR-</p>
+             <p>Saturdays 12:00 - 1:00 PM</p>
+             <h3>Level 2</h3>
+             <p>Thursdays 6:30 - 7:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+           </div>
+         </div>
+    </div>
+
+    <div class="classblock">
+      <div class="lightribbons">
+        <img src="images/ribbonlt2.svg"></img>
+      </div>
+         <h2 class="subtitle">PIANO ENSEMBLE</h2>
+         <img class="classimage" src="images/mock_class.png"/>
+         <div class="expander"><div class="exptext">EXPAND</div><i class="far fa-caret-square-right"></i></div>
+         <div class="expansionarea">
+           <div class="classdescription">
+             <p>
+               description
+             </p>
+           </div>
+           <div class="classtime">
+             <h3>Beginners Level</h3>
+             <p>Tuesdays 5:30 - 6:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Intermediate Level</h3>
+             <p>Tuesdays 6:30 - 7:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+           </div>
+         </div>
+    </div>
+
+    <div class="classblock">
+      <div class="lightribbons">
+        <img src="images/ribbonlt1.svg"></img>
+      </div>
+         <h2 class="subtitle">TAP</h2>
+         <img class="classimage" src="images/mock_class.png"/>
+         <div class="expander"><div class="exptext">EXPAND</div><i class="far fa-caret-square-right"></i></div>
+         <div class="expansionarea">
+           <div class="classdescription">
+             <p>
+               description
+             </p>
+           </div>
+           <div class="classtime">
+             <h3>Level 1</h3>
+             <p>Fridays 5:30 - 6:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Level 2</h3>
+             <p>Thursdays 7:30 - 8:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Ballet &#47; Tap Combo</h3>
+             <p>Saturdays 10:00 - 11:00 AM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+           </div>
+         </div>
+    </div>
+
+    <div class="classblock">
+      <div class="lightribbons">
+        <img src="images/ribbonlt1.svg"></img>
+      </div>
+         <h2 class="subtitle">VOCALS</h2>
+         <img class="classimage" src="images/mock_class.png"/>
+         <div class="expander"><div class="exptext">EXPAND</div><i class="far fa-caret-square-right"></i></div>
+         <div class="expansionarea">
+           <div class="classdescription">
+             <p>
+               description
+             </p>
+           </div>
+           <div class="classtime">
+             <h3>Vocal Ensemble</h3>
+             <p>Mondays 6:00 - 7:00 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Musical Theater</h3>
+             <p>Wednesdays 5:30 - 6:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+           </div>
          </div>
     </div>
 
@@ -406,53 +424,34 @@
       </div>
          <h2 class="subtitle">OTHER COURSES</h2>
          <img class="classimage" src="images/mock_class.png"/>
-         <div class="classdescription">
-           <p>
-             description
-           </p>
-         </div>
-         <div class="classtime">
-           <h3>Leaps and Turns</h3>
-           <p>Mondays 7:00 - 8:00 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Poms</h3>
-           <p>Tuesdays 6:30 - 7:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Adult Dance Fitness</h3>
-           <p>Wednesdays 6:30 - 7:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Guitar</h3>
-           <p>Thursdays 5:30 - 6:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
-           <h3>Beginners Contemporary</h3>
-           <p>Fridays 7:30 - 8:30 PM</p>
-           <div class="button classbtn"><a>ENROLL</a></div>
+         <div class="expander"><div class="exptext">EXPAND</div><i class="far fa-caret-square-right"></i></div>
+         <div class="expansionarea">
+           <div class="classdescription">
+             <p>
+               description
+             </p>
+           </div>
+           <div class="classtime">
+             <h3>Leaps and Turns</h3>
+             <p>Mondays 7:00 - 8:00 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Poms</h3>
+             <p>Tuesdays 6:30 - 7:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Adult Dance Fitness</h3>
+             <p>Wednesdays 6:30 - 7:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Guitar</h3>
+             <p>Thursdays 5:30 - 6:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+             <h3>Beginners Contemporary</h3>
+             <p>Fridays 7:30 - 8:30 PM</p>
+             <div class="button classbtn"><a>ENROLL</a></div>
+           </div>
          </div>
     </div>
 
     <h1 class="sectiontitle">Special Deals</h1>
-
-    <div class="classblock">
-      <div class="lightribbons">
-        <img src="images/ribbonlt1.svg"></img>
-      </div>
-         <h2 class="subtitle">BROADWAY BABIES</h2>
-         <img class="classimage" src="images/mock_class.png"/>
-         <div class="classdescription">
-           <p>
-           Broadway Babies consists of combination classes that help explore two different styles of dance - tap and ballet. Class is broken up into 2 sections. This class requires teacher approval.
-           </p>
-         </div>
-         <div class="classtime">
-           <p>
-            Wednesdays from 5:30 PM - 6:30 PM
-           </p>
-         </div>
-         <div class="classcost"><p>$55 / mo</p></div>
-         <div class="button dealbtn">
-           <a>ENROLL IN THIS CLASS</a>
-         </div>
-    </div>
 
     <div class="classblock">
       <div class="lightribbons">
@@ -484,27 +483,86 @@
    <section class="testimonials secwhite">
 
      <h1 class="sectiontitle">Testimonials</h1>
+     <div class="widthmanager">
+       <div class="testimonialwrapper">
 
-     <div class="testimonialblock">
-       <img class="quotemark" />
-       <div class="testimonialtext">
-         <p class="mainquote">
-              My daughter and I love Step It Up Performing Arts! She’s never felt so good about herself and I’ve never seen such a caring and personal studio.
-         </p>
-         <p class="quotename">- SUSAN F.</p>
+         <div class="testimonialblock">
+           <i class="fas fa-pause quotemarks"></i>
+           <div class="testimonialtext">
+             <p class="mainquote">
+                  1My daughter and I love Step It Up Performing Arts! She’s never felt so good about herself and I’ve never seen such a caring and personal studio.
+             </p>
+             <p class="quotename">- SUSAN F.</p>
+           </div>
+           <img class="testimonialpic" />
+         </div>
+
+         <div class="testimonialblock">
+           <i class="fas fa-pause quotemarks"></i>
+           <div class="testimonialtext">
+             <p class="mainquote">
+                  2Step It Up Performing Arts has changed my daughter more than I thought possible. She’s grown not just through her involvement with music, but with the community events. She’s become such a generous person.
+             </p>
+             <p class="quotename">- AMELIE G.</p>
+           </div>
+           <img class="testimonialpic" />
+         </div>
+
+         <div class="testimonialblock">
+           <i class="fas fa-pause quotemarks"></i>
+           <div class="testimonialtext">
+             <p class="mainquote">
+                  3Step It Up Performing Arts has changed my daughter more than I thought possible. She’s grown not just through her involvement with music, but with the community events. She’s become such a generous person.
+             </p>
+             <p class="quotename">- AMELIE G.</p>
+           </div>
+           <img class="testimonialpic" />
+         </div>
+
+         <div class="testimonialblock">
+           <i class="fas fa-pause quotemarks"></i>
+           <div class="testimonialtext">
+             <p class="mainquote">
+                  4Step It Up Performing Arts has changed my daughter more than I thought possible. She’s grown not just through her involvement with music, but with the community events. She’s become such a generous person.
+             </p>
+             <p class="quotename">- AMELIE G.</p>
+           </div>
+           <img class="testimonialpic" />
+         </div>
+
+         <div class="testimonialblock">
+           <i class="fas fa-pause quotemarks"></i>
+           <div class="testimonialtext">
+             <p class="mainquote">
+                  5Step It Up Performing Arts has changed my daughter more than I thought possible. She’s grown not just through her involvement with music, but with the community events. She’s become such a generous person.
+             </p>
+             <p class="quotename">- AMELIE G.</p>
+           </div>
+           <img class="testimonialpic" />
+         </div>
+
+         <div class="testimonialblock">
+           <i class="fas fa-pause quotemarks"></i>
+           <div class="testimonialtext">
+             <p class="mainquote">
+                  6Step It Up Performing Arts has changed my daughter more than I thought possible. She’s grown not just through her involvement with music, but with the community events. She’s become such a generous person.
+             </p>
+             <p class="quotename">- AMELIE G.</p>
+           </div>
+           <img class="testimonialpic" />
+         </div>
+
        </div>
-       <img class="testimonialpic" />
      </div>
 
-     <div class="testimonialblock">
-       <img class="quotemark" />
-       <div class="testimonialtext">
-         <p class="mainquote">
-              Step It Up Performing Arts has changed my daughter more than I thought possible. She’s grown not just through her involvement with music, but with the community events. She’s become such a generous person.
-         </p>
-         <p class="quotename">- AMELIE G.</p>
-       </div>
-       <img class="testimonialpic" />
+     <div class="testimonialradios">
+       <i class="fas fa-circle test1"></i>
+       <i class="far fa-circle test2"></i>
+       <i class="far fa-circle test3"></i>
+       <i class="far fa-circle test4"></i>
+       <i class="far fa-circle test5"></i>
+       <i class="far fa-circle test6"></i>
+
      </div>
 
    </section>
@@ -521,37 +579,46 @@
   <section class="contactus secblack">
 
     <h1 class="sectiontitle">Contact Us</h1>
-    <div class="formblock">
-      <h2 class-"formtitle">SEND US A MESSAGE</h2>
-      <form class="contactform">
-        <input />
-        <input />
-        <input />
-      </form>
-    </div>
-    <div class="visitblock">
-      <h2 class="addresstitle">STOP BY OUR STUDIO</h2>
-      <pre class="address">
-Step It Up Performing Arts
-16070 E Dartmouth Ave
-Aurora, CO 80013
-      </pre>
-      <div class="button">
-        <a>VIEW IN GOOGLE MAPS</a>
+    <div class="widthmanager">
+      <div class="formblock">
+        <h2 class-"formtitle">SEND US A MESSAGE</h2>
+        <form class="contactform">
+          <input type="text" name="name" value="Name"/>
+          <input type="text" name="email" value="Email Address"/>
+          <textarea name="message" >Message</textarea>
+          <input class="sendbutton" type="submit" value="SEND"/>
+        </form>
       </div>
-      <p class="hours">
-        Hours of Operation:
-      </p>
-      <pre class="hoursofop">
-        Mondays-Fridays   3:00 PM - 9:00 PM
-        Saturdays         10:00 AM - 6:00 PM
-        Sundays           closed
-      </pre>
-    </div>
-    <div class="callblock">
-      <p>(720) xxx-xxxx</p>
-    </div>
+      <div class="visitblock">
+        <h2 class="addresstitle">STOP BY OUR STUDIO</h2>
+        <pre class="address">
+  Step It Up Performing Arts
+  16070 E Dartmouth Ave
+  Aurora, CO 80013
+        </pre>
+        <div class="button" align="center">
+          <a href="https://www.google.com/maps/place/16070+E+Dartmouth+Ave,+Aurora,+CO+80013/@39.6575626,-104.8034906,14.92z/data=!4m5!3m4!1s0x876c884ad6e7c83b:0xaa5f3c1da81cf144!8m2!3d39.6593631!4d-104.7993577" target="_blank">VIEW IN GOOGLE MAPS</a>
+        </div>
+        <p class="hours">
+          Hours of Operation:
+        </p>
+        <pre class="hoursofop">
+  Mondays-Fridays
+  3:00 PM - 9:00 PM
 
+  Saturdays
+  10:00 AM - 6:00 PM
+
+  Sundays
+  closed
+        </pre>
+      </div>
+      <div class="callblock">
+        <h2 class="addresstitle">CALL US</h2>
+        <p>(720) 231-3580</p>
+      </div>
+
+    </div>
   </section>
 
 <!-- ========================================================================================== -->
@@ -568,7 +635,7 @@ Aurora, CO 80013
 Step It Up Performing Arts
 16070 E Dartmouth Ave
 Aurora, CO 80013
-(720) XXX - XXXX
+(720) 231-3580
       </pre>
     </div>
     <div class="footermid">
@@ -605,8 +672,8 @@ Aurora, CO 80013
 Site design by Josh Christofferson
       </pre>
       <div class="socialmedia">
-        <img class="socialmediaicon" />
-        <img class="socialmediaicon" />
+        <img src="images/facebook.png" class="socialmediaicon" />
+        <img src="images/instagram.png" class="socialmediaicon" />
       </div>
     </div>
   </footer>
@@ -614,6 +681,8 @@ Site design by Josh Christofferson
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/velocity.min.js"></script>
   <script src="js/dropdown.js"></script>
+  <script src="js/testimonials.js"></script>
+  <script src="js/expandclasses.js"></script>
 
   </body>
 </html>

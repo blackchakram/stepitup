@@ -9,7 +9,7 @@ var $linkblocks = $('.linkblock');
 $hamburgericon.hover(function(){
   $thedropdown.css("display", "block");
   $thedropdown.css("z-index", "10");
-  $thedropdown.velocity({height: "230px"},{duration: 400})
+  $thedropdown.velocity({height: "200px"},{duration: 400})
 });
 
 $thedropdown.hover(function(){
