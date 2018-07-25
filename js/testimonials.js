@@ -21,5 +21,5 @@ $testimonialcircle.click(function(){
   $('.testimonialradios i:nth-child(' + $thisindex + ')').addClass('fas');
 
   // scroll the testimonials window to the appropriate location for which testimonial was clicked
-  $testimonialwrapper.velocity({marginLeft: $testimonialradios.index(this)*(-320-320) + "px"},{duration: 500});
+  $testimonialwrapper.velocity({marginLeft: $testimonialradios.index(this)*(-300-320) + "px"},{duration: 500});
 });
