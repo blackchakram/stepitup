@@ -18,19 +18,24 @@ section h1 {
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  margin-bottom: 65px;
+  margin-bottom: 60px;
+  margin-top: 0;
 }
 
 section h2 {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 section p {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
+  margin: 20px 0;
 }
 
 h3 {
@@ -46,7 +51,7 @@ h3 {
 .secblack h1, .secblack h2, .secblack p{ color: black; }
 
 .sectionsegment {
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 section {
@@ -142,7 +147,7 @@ header {
 
 }
 
-.login a:hover {
+.login a:hover, .signup a:hover {
   border-bottom: 2px solid #92F1DD;
   box-sizing: border-box;
 }
@@ -174,12 +179,12 @@ header {
   cursor: pointer;
 }
 
-.login a {
+.login a, .signup a {
   margin-right: 20px;
   vertical-align: middle;
 }
 
-.linkblock a, .login a {
+.linkblock a, .login a, .signup a {
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -491,7 +496,7 @@ video {
 /* ================= CONTACT US =============== */
 
 form {
-  padding-top: 20px;
+  padding-top: 0;
   padding-bottom: 80px;
   text-align: center;
 }
@@ -523,7 +528,7 @@ pre, .hours, .callblock p {
   font-family: "Montserrat";
   font-weight: 100;
   font-size: 22px;
-  margin-bottom: -20px;
+  margin-bottom: -10px;
 }
 
 .sendbutton, .visitbutton {
@@ -555,7 +560,7 @@ pre, .hours, .callblock p {
 /* ================= FOOTER =============== */
 
 footer {
-  padding-top: 30px;
+  padding-top: 60px;
   padding-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
@@ -563,7 +568,7 @@ footer {
 
 .footeraddress, .legalese {
   font-family: "Montserrat";
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   color: white;
 }
