@@ -13,6 +13,8 @@ var $contactlink = $('.contactlink');
 
 var $offset;
 
+if ($(document).width() < 1440) {
+
 $hamburgericon.hover(function(){
   $thedropdown.css("display", "block");
   $thedropdown.css("z-index", "10");
@@ -32,7 +34,7 @@ $linkblocks.hover(function(){
   $(this).find('a').css("color", "black");
 });
 
-
+}
 
 
 $wholink.click(function(){

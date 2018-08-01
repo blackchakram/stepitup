@@ -119,6 +119,11 @@ header {
   position: relative;
   padding-top: 10px;
   padding-left: 10px;
+  max-height: 160px;
+}
+
+.logo {
+  max-height: 160px;
 }
 
 .topnav {
@@ -130,10 +135,6 @@ header {
 
 .hamburger {
   display: flex;
-
-  @media (min-width: 1024px) {
-    display: none;
-  }
 }
 
 .hamburger p, .exptext {
@@ -141,10 +142,6 @@ header {
   font-size: 12px;
   font-weight: 500;
   padding-right: 5px;
-}
-
-.hamburger img {
-
 }
 
 .login a:hover, .signup a:hover {
@@ -162,21 +159,23 @@ header {
   border-radius: 2px;
   border: 1px solid lightgray;
   position: absolute;
-  top: calc(50% - 22px);
+  top: calc(50% - 16px);
   right: 20px;
   z-index: -10;
   overflow: hidden;
 
   display: none;
-
-  @media (min-width: 1024px) {
-    display: inherit;
-  }
 }
 
 .linkblock {
   padding-left: 10px;
   cursor: pointer;
+}
+
+.login, .signup {
+  box-sizing: border-box;
+  padding-top: 10px;
+  height: 38px;
 }
 
 .login a, .signup a {
@@ -190,6 +189,7 @@ header {
   font-style: normal;
   text-decoration: none;
   color: black;
+  font-weight: 500;
 }
 
 .linkblock:hover {
@@ -348,7 +348,7 @@ video {
   font-family: "Roboto";
   color: black;
   margin-left: -20px;
-  margin-top: 7px;
+  margin-top: 12px;
 }
 
 .classesamount {
@@ -375,12 +375,35 @@ video {
   bottom: 0;
 }
 
-.bg1 { clip-path: polygon(0% 0%, 40% 0%, 40% 100%, 0% 100%) }
-.bg2 { clip-path: polygon(0% 0%, 52% 0%, 52% 100%, 0% 100%) }
-.bg3 { clip-path: polygon(0% 0%, 64% 0%, 64% 100%, 0% 100%) }
-.bg4 { clip-path: polygon(0% 0%, 76% 0%, 76% 100%, 0% 100%) }
-.bg5 { clip-path: polygon(0% 0%, 88% 0%, 88% 100%, 0% 100%) }
-.bg6 { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) }
+.bg1 {
+  clip-path: polygon(0% 0%, 40% 0%, 40% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 40% 0%, 40% 100%, 0% 100%);
+}
+
+.bg2 {
+  clip-path: polygon(0% 0%, 52% 0%, 52% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 52% 0%, 52% 100%, 0% 100%);
+}
+
+.bg3 {
+  clip-path: polygon(0% 0%, 64% 0%, 64% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 64% 0%, 64% 100%, 0% 100%);
+}
+
+.bg4 {
+  clip-path: polygon(0% 0%, 76% 0%, 76% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 76% 0%, 76% 100%, 0% 100%);
+}
+
+.bg5 {
+  clip-path: polygon(0% 0%, 88% 0%, 88% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 88% 0%, 88% 100%, 0% 100%);
+}
+
+.bg6 {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
 
 .s1 {left: 41%; bottom: -29%;}
 .s2 {left: 49%; bottom: -30%;}
@@ -390,7 +413,8 @@ video {
 .s6 {left: 101%;}
 
 .discountblock {
-  margin: 60px 0 20px;
+  width: 360px;
+  margin: 60px auto 30px;
   position: relative;
 }
 
@@ -459,6 +483,10 @@ video {
     width: 10000%;
 }
 
+.testimonials .widthmanager {
+  overflow-x: hidden;
+}
+
 .testimonialblock {
   margin-right: 320px;
   width: 300px;
@@ -492,6 +520,9 @@ video {
   cursor: pointer;
 }
 
+.testimonialpic {
+  display: none;
+}
 
 /* ================= CONTACT US =============== */
 
@@ -585,4 +616,245 @@ footer {
 
 .socialmedia img {
   cursor: pointer;
+}
+
+
+
+
+/* ========================================== */
+/* ================ RESPONSIVE ============== */
+/* ========================================== */
+
+@media (min-width: 768px) {
+
+  .topnav {
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .login, .signup {
+    padding-top: 9px;
+  }
+
+  .dropdownholder {
+    top: 20px;
+  }
+
+  .hero {
+    max-height: 470px;
+  }
+
+  .whoweare h1 {
+    width: 100%;
+  }
+
+  .whoweare {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sectionsegment {
+  margin-left: 26px;
+  margin-right: 26px;
+  }
+
+  .sectionsegment p {
+    width: 300px;
+  }
+
+  .aboutsegment {
+    width: 500px;
+  }
+
+  .classes .widthmanager {
+    max-width: 600px;
+    height: 302px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .pricingblock {
+    margin: 5px 0 10px 0;
+    display: grid;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .pricingblock {
+      display: block;
+    }
+  }
+
+  .s6 {
+    bottom: -34%;
+  }
+
+  .classescontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .classblock {
+    width: 330px;
+    overflow-x: hidden;
+    margin: 30px 10px;
+  }
+
+  .classblock .subtitle {
+    position: relative;
+    top: 10px;
+  }
+
+  .classblock .lightribbons {
+    top: 15px;
+    width: 65%;
+  }
+
+  .deals {
+    position: relative;
+    margin: 30px auto;
+  }
+
+  .testimonials .widthmanager {
+    max-width: 600px;
+  }
+
+  .testimonialblock {
+    width: 600px;
+    display: flex;
+  }
+
+  .testimonialtext {
+    padding-right: 40px;
+    width: 300px;
+  }
+
+  .testimonialpic {
+    display: inline;
+    width: 200px;
+    height: 250px;
+  }
+
+  .contactus .widthmanager {
+    max-width: 650px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .formblock {
+    width: 300px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1110px) {
+
+  .whoweare .sectionsegment {
+    margin-left: 85px;
+    margin-right: 85px;
+  }
+}
+
+
+
+
+
+
+
+@media (min-width: 1440px) {
+
+  video {
+    left: 0;
+    width: 100vw;
+  }
+
+  .ctaholder {
+    padding-top: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .dropdownholder {
+    z-index: auto;
+    line-height: 1.15;
+    box-sizing: border-box;
+    width: auto;
+    height: 38px;
+    background-color: inherit;
+    box-shadow: none;
+    border-radius: inherit;
+    border: none;
+    position: relative;
+    top: 0;
+    right: 20px;
+    z-index: auto;
+    overflow: hidden;
+    padding-top: 9px;
+
+    display: inherit;
+  }
+
+  .linkblock a:hover {
+    border-bottom: 2px solid #92F1DD;
+    box-sizing: border-box;
+  }
+
+  .linkblock:hover {
+    background-color: rgba(0,0,0,0);
+    color: black;
+  }
+
+  .whoweare .sectionsegment {
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+
+  .widecolumn {
+    display: flex;
+    height: 310px;
+  }
+
+  .widthmanager {
+    width: 600px;
+  }
+
+  .discountblock {
+    width: 330px;
+    height: 300px;
+  }
+
+  .classblock:not(.deals) {
+    margin: 30px 20px;
+  }
+
+  .testimonials .widthmanager {
+    width: 1200px;
+    max-width: 1200px;
+  }
+
+  .testimonialblock {
+    margin-right: 40px;
+  }
+
+  .contactus .widthmanager {
+    width: 650px;
+  }
+
 }
