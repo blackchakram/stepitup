@@ -6,6 +6,7 @@ var $testimonialcircle = $('.fa-circle');
 var $testimonialwrapper = $('.testimonialwrapper');
 var $testimonialradios = $('.testimonialradios i');
 
+var $testimonialwidth = -960;
 
 $testimonialcircle.click(function(){
 
@@ -20,6 +21,13 @@ $testimonialcircle.click(function(){
   // change the radio button thing to filled for the index just clicked on
   $('.testimonialradios i:nth-child(' + $thisindex + ')').addClass('fas');
 
+  if ($(window).width() < 1440) {
+    $testimonialwidth = -600;
+  }
+  if ($(window).width() < 768) {
+    $testimonialwidth = -300;
+  }
+
   // scroll the testimonials window to the appropriate location for which testimonial was clicked
-  $testimonialwrapper.velocity({marginLeft: $testimonialradios.index(this)*(-300-320) + "px"},{duration: 500});
+  $testimonialwrapper.velocity({marginLeft: $testimonialradios.index(this)*($testimonialwidth-320) + "px"},{duration: 500});
 });

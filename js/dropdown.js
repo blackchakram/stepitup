@@ -13,7 +13,7 @@ var $contactlink = $('.contactlink');
 
 var $offset;
 
-if ($(document).width() < 1440) {
+if ($(window).width() < 1440) {
 
 $hamburgericon.hover(function(){
   $thedropdown.css("display", "block");

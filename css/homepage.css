@@ -221,6 +221,14 @@ video {
   padding-top: 10%;
 }
 
+.famfav {
+  position: absolute;
+  right: 20px;
+  top: 65vw;
+  width: 100px;
+  z-index: 10;
+}
+
 /* ============ DIVIDER RIBBONS =============== */
 
 .ribbons {
@@ -237,11 +245,14 @@ video {
 
 /* ================= WHO WE ARE =============== */
 
-.whoweareimg {
+.whoweareimg, .ownerimage {
   width: 300px;
-  height: calc(320px * 0.8);
   margin: 0 auto;
   display: block;
+}
+
+.whoweareimg {
+  height: calc(300px * 0.8);
 }
 
 .classcost {
@@ -277,7 +288,7 @@ video {
 
 .lightribbons {
   position: absolute;
-
+  z-index: -20;
 }
 
 .lightribbons img {
@@ -409,11 +420,11 @@ video {
 .s2 {left: 49%; bottom: -30%;}
 .s3 {left: 65%; bottom: -28%;}
 .s4 {left: 62%; bottom: -26%;}
-.s5 {left: 89%; bottom: -27%;}
+.s5 {left: 88%; bottom: -23%;}
 .s6 {left: 101%;}
 
 .discountblock {
-  width: 360px;
+  width: 300px;
   margin: 60px auto 30px;
   position: relative;
 }
@@ -439,15 +450,22 @@ video {
   left: 57%;
 }
 
-.classimage {
+.classes h2 {
   position: relative;
-  width: 100vw;
-  left: -30px;
-  height: 118px;   /* delete later */
+  left: 140px;
+  text-align: left;
+}
+
+.classimage {
+  position: absolute;
+  height: 125px;
+  text-align: center;
+  top: -25px;
 }
 
 .expander {
   margin-bottom: 5px;
+  margin-top: 60px;
   cursor: pointer;
   width: 100%;
   text-align: right;
@@ -637,11 +655,17 @@ footer {
   }
 
   .dropdownholder {
-    top: 20px;
+    top: 23px;
   }
 
   .hero {
     max-height: 470px;
+  }
+
+  .famfav {
+    right: 40px;
+    top: 550px;
+    width: 100px;
   }
 
   .whoweare h1 {
@@ -686,6 +710,22 @@ footer {
     }
   }
 
+  .s1 {
+    bottom: -35%;
+  }
+
+  .s2 {
+    bottom: -34%;
+  }
+
+  .s4 {
+    bottom: -33%;
+  }
+
+  .s5 {
+    bottom: -32%;
+  }
+
   .s6 {
     bottom: -34%;
   }
@@ -693,23 +733,23 @@ footer {
   .classescontainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .classblock {
     width: 330px;
-    overflow-x: hidden;
     margin: 30px 10px;
   }
 
   .classblock .subtitle {
     position: relative;
-    top: 10px;
+    top: 47px;
   }
 
   .classblock .lightribbons {
-    top: 15px;
-    width: 65%;
+    top: 25px;
+    overflow-x: hidden;
+    padding-top: 28px;
   }
 
   .deals {
@@ -717,13 +757,26 @@ footer {
     margin: 30px auto;
   }
 
+  .classimage {
+    top: 10px;
+  }
+
+  .expander {
+    margin-top: 100px;
+  }
+
   .testimonials .widthmanager {
     max-width: 600px;
+    overflow-y: hidden;
   }
 
   .testimonialblock {
     width: 600px;
     display: flex;
+  }
+
+  .testimonialradios {
+    margin-top: 40px;
   }
 
   .testimonialtext {
@@ -791,6 +844,14 @@ footer {
     display: none;
   }
 
+  .linkblock a, .login a, .signup a {
+    margin: 0 10px;
+  }
+
+  .signup, .login {
+    margin-right: 20px;
+  }
+
   .dropdownholder {
     z-index: auto;
     line-height: 1.15;
@@ -806,7 +867,7 @@ footer {
     right: 20px;
     z-index: auto;
     overflow: hidden;
-    padding-top: 9px;
+    padding-top: 10px;
 
     display: inherit;
   }
