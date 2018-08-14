@@ -11,7 +11,7 @@ $expandbutton.click(function(){
     $(this).removeClass('opened');
 
     $(this).find('.exptext').html("");
-    $(this).find('.exptext').append("EXPAND");
+    $(this).find('.exptext').append("READ DESCRIPTION");
     $(this).find('.far').removeClass('fa-caret-square-down');
     $(this).find('.far').addClass('fa-caret-square-right');
   } else {
@@ -23,7 +23,7 @@ $expandbutton.click(function(){
     $(this).next().velocity({height: $divheight},{duration: 400});
 
     $(this).find('.exptext').html("");
-    $(this).find('.exptext').append("COLLAPSE");
+    $(this).find('.exptext').append("HIDE DESCRIPTION");
     $(this).find('.far').removeClass('fa-caret-square-right');
     $(this).find('.far').addClass('fa-caret-square-down');
   }
