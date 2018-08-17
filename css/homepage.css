@@ -513,19 +513,14 @@ video {
 .testimonialblock {
   margin-right: 320px;
   width: 300px;
-}
-
-.quotemarks {
-  font-size: 52px;
-  transform: rotate(10deg);
-  color: white;
-  opacity: 0.25;
-  position: absolute;
-  margin-top: -20px;
+  background-image: url('../images/quotemark.png');
+  background-repeat: no-repeat;
+  background-position: top left;
 }
 
 .testimonialtext {
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
   text-indent: 20px;
 }
 
@@ -541,10 +536,6 @@ video {
 
 .testimonialradios i {
   cursor: pointer;
-}
-
-.testimonialpic {
-  display: none;
 }
 
 /* ================= CONTACT US =============== */
@@ -771,28 +762,25 @@ footer {
   }
 
   .testimonials .widthmanager {
-    max-width: 600px;
+    max-width: 700px;
     overflow-y: hidden;
   }
 
   .testimonialblock {
-    width: 600px;
-    display: flex;
+    margin-right: 80px;
   }
 
   .testimonialradios {
     margin-top: 40px;
   }
 
+  .testimonialradios i:nth-child(n+4) {
+    display: none;
+  }
+
   .testimonialtext {
     padding-right: 40px;
     width: 300px;
-  }
-
-  .testimonialpic {
-    display: inline;
-    width: 200px;
-    height: 250px;
   }
 
   .contactus .widthmanager {
@@ -913,10 +901,6 @@ footer {
   .testimonials .widthmanager {
     width: 1200px;
     max-width: 1200px;
-  }
-
-  .testimonialblock {
-    margin-right: 40px;
   }
 
   .contactus .widthmanager {

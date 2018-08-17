@@ -22,7 +22,7 @@ $testimonialcircle.click(function(){
   $('.testimonialradios i:nth-child(' + $thisindex + ')').addClass('fas');
 
   if ($(window).width() < 1440) {
-    $testimonialwidth = -600;
+    $testimonialwidth = -440;
   }
   if ($(window).width() < 768) {
     $testimonialwidth = -300;
