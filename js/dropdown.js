@@ -9,7 +9,7 @@ var $linkblocks = $('.linkblock');
 var $wholink = $('.wholink');
 var $classlink = $('.classlink');
 var $testimlink = $('.testimlink');
-var $contactlink = $('.contactlink');
+var $contactlink = $('.contactlink, .specialcontact');
 
 var $offset;
 
