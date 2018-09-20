@@ -4,7 +4,7 @@ var $loop = false;
 var $messagewidth = $bannertext.width();
 var $messagetext = $bannertext.html();
 var $originalmessage = $bannertext.html();
-
+/*
 scrollsetter();
 looper();
 
@@ -14,7 +14,7 @@ $(window).resize(function() {
   scrollsetter();
   looper();
 });
-
+*/
 
 
 
