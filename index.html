@@ -43,7 +43,7 @@
 <!-- ======================================= HEADER ======================================= -->
 
      <div class="banner">
-       <dv class="bannermessage">NOW ENROLLING FOR OUR FALL CLASSES. COME JOIN OUR FAMILY!</dv>
+       <div class="marquee">NOW ENROLLING FOR OUR FALL CLASSES. COME JOIN OUR FAMILY!</div>
      </div>
      <header>
        <div class="stepituplogo">
@@ -710,7 +710,16 @@ Site design by Josh Christofferson
   <script src="js/dropdown.js"></script>
   <script src="js/testimonials.js"></script>
   <script src="js/expandclasses.js"></script>
-  <script src="js/banner.js"></script>
+  <script src="js/jquery.marquee.min.js"></script>
 
+  <script>
+  $('.marquee').marquee({
+      duration: 5000,
+      gap: 100,
+      delayBeforeStart: 0,
+      direction: 'left',
+      duplicated: true
+  });
+  </script>
   </body>
 </html>
