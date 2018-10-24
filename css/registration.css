@@ -237,28 +237,32 @@ header {
 
 /* =============== FORM STUFF =============== */
 
-.schedule .button, .theschedule, .formlink  {
+.schedule .button, .scheduleview, .formlink  {
   text-align: center;
 }
-
+/*
 .schedule img {
   width: calc(100vw - 60px);
   max-width: 724px;
   margin-bottom: 60px;
+}
+*/
+.scheduleview {
+  margin-bottom: 100px;
 }
 
 .schedule p {
   max-width: 600px;
   margin: 40px auto;
 }
-
+/*
 .bigpdf {
   text-decoration: none;
   color: white;
   font-weight: 300;
   font-size: 15px;
 }
-
+*/
 
 /* ================= FOOTER =============== */
 
@@ -305,10 +309,6 @@ footer {
   footer {
     display: flex;
     justify-content: space-between;
-  }
-
-  .theschedule p {
-    display: none;
   }
 
 }
