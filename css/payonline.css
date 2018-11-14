@@ -1,0 +1,351 @@
+/* ============= SHARED ELEMENTS ============== */
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+  background-repeat: repeat;
+  background-image: url(../images/bodybg.png);
+}
+
+section h1 {
+  font-family: "Alegreya Sans SC";
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 0;
+}
+
+section h2 {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+h3 {
+  margin-bottom: 0.3em;
+  margin-top: 30px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.secwhite h1, .secwhite h2, .secwhite p{ color: white; }
+
+.secblack h1, .secblack h2, .secblack p{ color: black; }
+
+.sectionsegment {
+  padding-bottom: 60px;
+}
+
+section {
+  padding: 60px 30px;
+  box-sizing: border-box;
+}
+
+section.schedule{
+  background-color: #C44141;
+}
+
+.topmargin70 {
+  margin-top: 70px;
+}
+
+.widthmanager {
+  max-width: 360px;
+  margin: 0 auto;
+  display: block;
+}
+
+header, .hero {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.button {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.button a, .sendbutton {
+    font-family: Roboto;
+    font-size: 12px;
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #92F1DD;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+.button a:hover {
+  background-color: #75CDBA;
+}
+
+.button a:active {
+  background-color: #5BAC9B;
+  color: white;
+}
+
+.largebtn {
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* =============== HEADER STUFF =============== */
+
+header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner {
+  background-color: #C44141;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Montserrat";
+  color: white;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 35px;
+}
+
+.bannermessage {
+  position: absolute;
+  width: max-content;
+  width: -moz-max-content;
+}
+
+.stepituplogo {
+  width: 30%;
+  position: relative;
+  padding-top: 10px;
+  padding-left: 10px;
+  max-height: 160px;
+}
+
+.logo {
+  max-height: 160px;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  position: relative;
+}
+
+.hamburger {
+  display: flex;
+}
+
+.hamburger p, .exptext {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 500;
+  padding-right: 5px;
+}
+
+.login a:hover, .signup a:hover {
+  border-bottom: 2px solid #92F1DD;
+  box-sizing: border-box;
+}
+
+.dropdownholder {
+  line-height: 1.75em;
+  box-sizing: border-box;
+  width: 130px;
+  height: 15px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  position: absolute;
+  top: calc(50% - 16px);
+  right: 20px;
+  z-index: -10;
+  overflow: hidden;
+
+  display: none;
+}
+
+.linkblock {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.login, .signup {
+  box-sizing: border-box;
+  padding-top: 10px;
+  height: 38px;
+}
+
+.login a, .signup a {
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.linkblock a, .login a, .signup a {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.linkblock:hover {
+  background-color: #92F1DD;
+  color: white;
+}
+
+
+/* ============ DIVIDER RIBBONS =============== */
+
+.ribbons {
+  position: relative;
+  height: 40px;
+}
+
+.ribbons img{
+  width: 100%;
+  height: 40px;
+  position: absolute;
+}
+
+/* =============== FORM STUFF =============== */
+
+.schedule .button, .scheduleview, .formlink  {
+  text-align: center;
+}
+/*
+.schedule img {
+  width: calc(100vw - 60px);
+  max-width: 724px;
+  margin-bottom: 60px;
+}
+*/
+.scheduleview {
+  margin-bottom: 100px;
+}
+
+.schedule p {
+  max-width: 600px;
+  margin: 40px auto;
+}
+/*
+.bigpdf {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+}
+*/
+
+input {
+  margin-top: 5px;
+}
+
+.schedule form p {
+  margin: 30px auto 5px;
+}
+
+textarea {
+  height: 300px;
+  padding-top: 20px;
+}
+
+.runningtotal p{
+  border-bottom: 1px dashed white;
+}
+
+.schedule .payment {
+  margin: 10px auto;
+}
+
+.classespaycontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.classpick, .paymentbuttons {
+  max-width: 300px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.centeredpay {
+  margin: 20px auto;
+  width: 200px;
+}
+
+/* ================= FOOTER =============== */
+
+footer {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: black;
+}
+
+.footeraddress, .legalese {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 16px;
+  color: black;
+}
+
+.footermid {
+  display: none;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto 10px;
+}
+
+.socialmedia img {
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* ========================================== */
+/* ================ RESPONSIVE ============== */
+/* ========================================== */
+
+@media (min-width: 768px) {
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

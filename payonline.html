@@ -30,7 +30,7 @@
 
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
      <link rel="stylesheet" type="text/css" href="css/normalize.css">
-     <link rel="stylesheet" type="text/css" href="css/registration.css">
+     <link rel="stylesheet" type="text/css" href="css/payonline.css">
    </head>
 
    <body>
@@ -83,14 +83,95 @@
      <!-- ============================= SCHEDULE & REGISTRATION ==================================== -->
 
          <section class="schedule secwhite">
-             <h1 class="sectiontitle">Pay Online</h1>
+             <h1 class="sectiontitle">Pay For Classes Online</h1>
 
              <div class="scheduleview">
                <p>
-                 Click the button below to pay with PayPal.
+                 Please note that we have a small online convenience fee for every Paypal transaction. This is automatically applied to the total monthly fee.
                </p>
-               <div id="paypal-button-container"></div>
+
+              <div class="classespaycontainer">
+                <form class="classpick">
+                  <p>How many classes total are you enrolling your family in (not including private lessons)?</p>
+                  <select class="dropdownnum">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 or more</option>
+                  </select>
+
+                  <p>Are you enrolling more than one family member?</p>
+                  <input type="radio" name="multifamily" checked="checked" value="0"> No</input><br>
+                  <input type="radio" name="multifamily" value="1"> Yes</input><br>
+
+                  <p>If you are enrolling in any of the classes listed below, please check the box next to each.</p>
+                  <input type="checkbox" name="spec1" value="1"> Broadway Babies<br>
+                  <input type="checkbox" name="spec2" value="1"> Point Conditioning<br>
+                  <input type="checkbox" name="spec3" value="1"> Pre-point, Point Conditioning<br>
+                  <input type="checkbox" name="spec4" value="1"> Pointe<br>
+                  <input type="checkbox" name="spec5" value="1"> Contemporary and Jazz<br>
+                  <input type="checkbox" name="spec6" value="1"> Half-hour private lesson<br>
+                  <input type="checkbox" name="spec7" value="1"> Hour-long private lesson<br>
+
+                  </form>
+
+          <div class="paymentbuttons">
+                <div class="runningtotal"><p>Your monthly fee: $0 / mo</p></div>
+                  <p class="payment">Make a one-time payment</p>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_xclick">
+                  <input type="hidden" name="business" value="stepituperform@gmail.com">
+                  <input type="hidden" name="lc" value="US">
+                  <input class="paypalvalue" type="hidden" name="amount" value="1.00">
+                  <input type="hidden" name="currency_code" value="USD">
+                  <input type="hidden" name="button_subtype" value="services">
+                  <input type="hidden" name="no_note" value="0">
+                  <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+                  <input type="image" src="images/btn_PP.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+<br /><br />
+                  <p class="payment">Set up a recurring monthly payment.</p>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                <input type="hidden" name="business" value="stepituperform@gmail.com">
+                <input type="hidden" name="lc" value="US">
+                <input type="hidden" name="no_note" value="1">
+                <input type="hidden" name="src" value="1">
+                <input class="paypalvalue" type="hidden" name="a3" value="1.00">
+                <input type="hidden" name="p3" value="1">
+                <input type="hidden" name="t3" value="M">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="hidden" name="bn" value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHostedGuest">
+                <input type="image" src="images/btn_PP.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+          </div>
+
+              </div>
+
              </div>
+
+
+            <h1 class="sectiontitle">Purchase Tickets</h1>
+            <p>
+              Our annual recital is coming soon! Tickets cost $14.50 or $15 at the door and can be purchased through PayPal using the button below.
+            </p>
+
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="centeredpay">
+              <input type="hidden" name="cmd" value="_xclick">
+              <input type="hidden" name="business" value="stepituperform@gmail.com">
+              <input type="hidden" name="lc" value="US">
+              <input class="paypalvalue" type="hidden" name="amount" value="14.50">
+              <input type="hidden" name="currency_code" value="USD">
+              <input type="hidden" name="button_subtype" value="services">
+              <input type="hidden" name="no_note" value="0">
+              <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
+              <input type="image" src="images/btn_PP.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
 
           </section>
 
@@ -158,71 +239,10 @@
 
             </footer>
 
-<!--
-            <script src="https://www.paypalobjects.com/api/checkout.js"></script>
-            <script>
-            // Render the PayPal button
-            paypal.Button.render({
-            // Set your environment
-            env: 'sandbox', // sandbox | production
-
-            // Specify the style of the button
-            style: {
-              layout: 'vertical',  // horizontal | vertical
-              size:   'medium',    // medium | large | responsive
-              shape:  'rect',      // pill | rect
-              color:  'gold'       // gold | blue | silver | white | black
-            },
-
-            // Specify allowed and disallowed funding sources
-            //
-            // Options:
-            // - paypal.FUNDING.CARD
-            // - paypal.FUNDING.CREDIT
-            // - paypal.FUNDING.ELV
-            funding: {
-              allowed: [
-                paypal.FUNDING.CARD,
-                paypal.FUNDING.CREDIT
-              ],
-              disallowed: []
-            },
-
-            // PayPal Client IDs - replace with your own
-            // Create a PayPal app: https://developer.paypal.com/developer/applications/create
-            client: {
-              sandbox: 'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
-              production: '<insert production client id>'
-            },
-
-            payment: function (data, actions) {
-              return actions.payment.create({
-                payment: {
-                  transactions: [
-                    {
-                      amount: {
-                        total: '0.01',
-                        currency: 'USD'
-                      }
-                    }
-                  ]
-                }
-              });
-            },
-
-            onAuthorize: function (data, actions) {
-              return actions.payment.execute()
-                .then(function () {
-                  window.alert('Payment Complete!');
-                });
-            }
-            }, '#paypal-button-container');
-            </script>
--->
-
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/velocity.min.js"></script>
 <script src="js/dropdown-short.js"></script>
+<script src="js/payschema.js"></script>
 
 </body>
 </html>
